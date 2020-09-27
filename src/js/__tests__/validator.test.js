@@ -6,6 +6,7 @@ test('should be truthy', () => {
   expect(new Validator('Va_123-sya').validateUsername()).toBeTruthy()
   expect(new Validator('Va_123sya').validateUsername()).toBeTruthy()
   expect(new Validator('V').validateUsername()).toBeTruthy()
+  expect(new Validator('Va').validateUsername()).toBeTruthy()
   expect(new Validator('v_ya123v-_va273sya').validateUsername()).toBeTruthy()
 })
 
