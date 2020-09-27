@@ -3,5 +3,3 @@ export default function formatPhone(number) {
   if (result.length >= 11) return result
   throw new Error('Short number')
 }
-
-formatPhone('+7 916 333 22 33')
